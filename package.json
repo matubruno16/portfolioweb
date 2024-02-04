@@ -13,6 +13,7 @@
     "@fontsource-variable/oswald": "^5.0.18",
     "@fontsource/roboto": "^5.0.8",
     "@vercel/analytics": "^1.1.2",
+    "@vercel/speed-insights": "^1.0.9",
     "framer-motion": "^11.0.3",
     "photoswipe": "^5.4.3",
     "react": "^18.2.0",
