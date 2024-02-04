@@ -77,19 +77,21 @@ export const SocialShareButton = () => {
         <div className="toggle intermitente " onClick={toggleMenu}>
           <FaShareAlt />
         </div>
-        {socialLinks.map((link, index) => (
-          <li key={index} style={{ "--i": index, "--clr": link.color }}>
-            <a href={link.url} target="_blank" rel="noopener noreferrer"
-            title={`Ir al perfil de @${link.name} en ${link.name}`}
-            >
-              {link.icon}
-            </a>
-          </li>
-        ))}
+        <ul>
+          {socialLinks.map((link, index) => (
+
+            <li key={index} style={{ "--i": index, "--clr": link.color }}>
+              <a href={link.url} target="_blank" rel="noopener noreferrer"
+                title={`Ir al perfil de @${link.name} en ${link.name}`}
+              >
+                {link.icon}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
       <div
-        className={`${isActive ? "hidden" : "flex flex-col items-center translate-y-[-70px]"
-          }`}
+        className={`${isActive ? "hidden" : "flex flex-col items-center translate-y-[-70px]"}`}
       >
 
       </div>
