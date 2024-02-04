@@ -25,9 +25,9 @@ export const About = () => {
               <p className="mt-4">
                 <span className="font-bold text-lg">Nombre:</span> Matias Ceferino Bruno
               </p>
-              <p className="mt-4">
+              <h2 className="mt-4">
                 <span className="font-bold text-lg">Perfil:</span> Full Stack
-              </p>
+              </h2>
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 className="mx-auto bg-Blue border-Blue text-white rounded-md px-6 py-2 mt-4 shadow-lg hover:shadow-blue-500/50 transition-all duration-500 hover:bg-BlueHover "
