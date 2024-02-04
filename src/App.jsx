@@ -1,10 +1,10 @@
-import { About } from "./Components/About";
-import { Certifications } from "./Components/Certifications";
-import { Contact } from "./Components/Contact";
-import { Home } from "./Components/Home";
-import { NavBar } from "./Components/NavBar";
-import { Proyects } from "./Components/Proyects";
-import { Services } from "./Components/Services";
+import { About } from "./components/About";
+import { Certifications } from "./components/Certifications";
+import { Contact } from "./components/Contact";
+import { Home } from "./components/Home";
+import { NavBar } from "./components/NavBar";
+import { Proyects } from "./components/Proyects";
+import { Services } from "./components/Services";
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/700.css';
 import '@fontsource-variable/oswald';
