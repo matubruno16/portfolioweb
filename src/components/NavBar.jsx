@@ -90,7 +90,7 @@ export const NavBar = () => {
               <Link
                 className="text-white font-Oswald font-semibold  xl:tracking-wide text-medium xl:text-lg m-1 lg:m-2 xl:m-4 align-middle hover:cursor-pointer border-b
               border-b-transparent hover:border-b hover:border-b-white hover:transition-all duration-200 ease-in-out uppercase active:border-b active:border-b-blue-400"
-                smooth={500}
+                smooth={'easeInOutQuint'}
                 to={l.link}
                 key={l.id}
                 title={`Enlace ${l.link}`}
@@ -107,7 +107,7 @@ export const NavBar = () => {
             onClick={() => setMenuOpen(false)}
             className="flex font-Oswald max-w-max text-white text-3xl mt-10 my-6 ml-6 hover:cursor-pointer
             hover:border-b-4 hover:border-b-white hover:transition-all duration-300 uppercase"
-            smooth={true}
+            smooth={'easeInOutQuint'}
             to={l.link}
             key={l.id}
             title={`Enlace ${l.link}`}
