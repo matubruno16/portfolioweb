@@ -1,0 +1,30 @@
+# Robots.txt para el sitio web https://matiasbrunodev.vercel.app/
+# Creado por Matias Bruno, Desarrollador Web y SEO Especialista
+# Última actualización: 2024-02-07
+
+# Definir reglas de acceso para los rastreadores de motores de búsqueda
+
+User-agent: *
+Crawl-delay: 5                           
+
+# Restringir el acceso a ciertas partes del sitio
+
+Disallow: /admin/                        
+Disallow: /private/                      
+Disallow: /temp/                         
+Disallow: /cgi-bin/                      
+
+# Permitir acceso a las siguientes ubicaciones
+
+Allow: /                                 
+Allow: /src/assets/                     
+Allow: /src/                             
+Allow: /blog/                            
+
+# Especificar la ubicación del sitemap
+
+Sitemap: https://matiasbrunodev.vercel.app/sitemap.xml
+
+# Especificar el host de preferencia
+
+Host: https://matiasbrunodev.vercel.app/
