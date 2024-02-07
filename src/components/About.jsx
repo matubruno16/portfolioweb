@@ -43,44 +43,38 @@ export const About = () => {
           <div>
             <div className="my-10">
               <p className="text-xl mt-8 font-bold text-center">Skills</p>
-              <div className="grid grid-cols-3  justify-items-center mt-8 gap-4 sm:w-[70%] mx-auto ">
+              <div className="grid grid-cols-3  justify-items-center mt-8 gap-4 sm:w-[70%] mx-auto  ">
                 <img 
+                  className=""
                   src={imgHtml} 
                   alt="Logo HTML" 
-                  width={70}
-                  height={70} 
+                  width={65}                 
                   />
                 <img 
                   src={imgCss} 
                   alt="Logo CSS" 
-                  width={70}
-                  height={70}
-                  />
+                  width={65}
+                 />
                 <img 
                   src={imgJs} 
                   alt="Logo Javascript" 
-                  width={70}
-                  height={70}
-                  />
+                  width={65}
+                 />
                 <img 
                   src={imgReactjs} 
                   alt="Logo React JS" 
-                  width={70}
-                  height={70}
-                  />
+                  width={65}
+                 />
                 <img
                   src={imgWordpress}
                   alt="Logo Wordpress"
-                  width={70}
-                  height={70}
-              
+                  width={65}
                 />
                 <img 
                   src={imgMysql} 
                   alt="Logo MySQL" 
-                  width={70}
-                  height={70}
-                  />
+                  width={65}
+                 />
               </div>
             </div>
           </div>
