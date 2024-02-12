@@ -61,7 +61,7 @@ export const Contact = () => {
           </li>
         </ul>
         <p className="text-white text-sm lg:text-base pt-14">
-          © Copyright 2023 <strong>Matias Bruno. </strong>All Rights Reserved{" "}
+        © {(new Date().getFullYear())} Todos los derechos reservados. Desarrollado por: <a href="https://matiasbrunodev.vercel.app/" target="_blank" rel="noreferrer">Matias Bruno</a>
         </p>
       </div>
     </footer>
