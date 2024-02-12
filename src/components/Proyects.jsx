@@ -39,9 +39,9 @@ export const Proyects = () => {
         className="grid grid-cols-1 gap-x-[20px] gap-y-[40px] p-[10px] md:grid-cols-2 xl:grid-cols-3 place-content-center justify-items-center"
       >
         <motion.article
-          initial={{ opacity: 0, x: 50 }}
-          animate={isVisible ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 2, stiffness: 100 }}
+          initial={{ opacity: 0, x: -50, y: -50}}
+          animate={isVisible ? { opacity: 1, x: 0 , y: 0} : {}}
+          transition={{ delay:0.15 ,duration: 2, stiffness: 100 }}
         >
           <CardProyect
             urlSit="https://boutiquedehebras.com.ar"
@@ -52,9 +52,9 @@ export const Proyects = () => {
           />
         </motion.article>
         <motion.article
-          initial={{ opacity: 0, x: 50 }}
-          animate={isVisible ? { opacity: 1, x: 0 } : {}}
-          transition={{ delay: 0.3, duration: 2, stiffness: 100 }}
+          initial={{ opacity: 0, y: -50 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay:0.3 ,duration: 2, stiffness: 100 }}
         >
           <CardProyect
             urlSit="https://dolarhoyargentina.vercel.app/"
@@ -66,9 +66,9 @@ export const Proyects = () => {
         </motion.article>
 
         <motion.article
-          initial={{ opacity: 0, x: 50 }}
-          animate={isVisible ? { opacity: 1, x: 0 } : {}}
-          transition={{ delay: 0.6, duration: 2, stiffness: 100 }}
+          initial={{ opacity: 0, x: 50, y: -50}}
+          animate={isVisible ? { opacity: 1, x: 0 , y: 0} : {}}
+          transition={{ delay:0.45 ,duration: 2, stiffness: 100 }}
         >
           <CardProyect
             urlSit="https://todo-list-react-mb.netlify.app/"
@@ -79,9 +79,9 @@ export const Proyects = () => {
           />
         </motion.article>
         <motion.article
-          initial={{ opacity: 0, x: 50 }}
-          animate={isVisible ? { opacity: 1, x: 0 } : {}}
-          transition={{ delay: 0.9, duration: 2, stiffness: 100 }}
+          initial={{ opacity: 0, x: -50, y: 50 }}
+          animate={isVisible ? { opacity: 1, x: 0 , y: 0} : {}}
+          transition={{ delay:0.6 ,duration: 2, stiffness: 100 }}
         >
           <CardProyect
             urlSit="https://social-media-dashboard-matias-bruno.netlify.app"
@@ -93,9 +93,9 @@ export const Proyects = () => {
         </motion.article>
 
         <motion.article
-          initial={{ opacity: 0, x: 50 }}
-          animate={isVisible ? { opacity: 1, x: 0 } : {}}
-          transition={{ delay: 1.2, duration: 2, stiffness: 100 }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay:0.75 ,duration: 2, stiffness: 100 }}
         >
           <CardProyect
             urlSit="https://relojenvivo.netlify.app"
@@ -106,9 +106,9 @@ export const Proyects = () => {
           />
         </motion.article>
         <motion.article
-          initial={{ opacity: 0, x: 50 }}
-          animate={isVisible ? { opacity: 1, x: 0 } : {}}
-          transition={{ delay: 1.5, duration: 2, stiffness: 100 }}
+          initial={{ opacity: 0, x: 50 , y: 50}}
+          animate={isVisible ? { opacity: 1, x: 0, y: 0 } : {}}
+          transition={{ delay:0.9 ,duration: 2, stiffness: 100 }}
         >
           <CardProyect
             urlSit="https://tatetireactjs.netlify.app/"
