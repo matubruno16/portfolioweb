@@ -1,5 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { SocialShareButton } from "./SocialShareButton";
 import ovni from "../assets/ufo.png";
@@ -10,23 +10,21 @@ export const Home = () => {
 
   useEffect(() => {
     const moveOvni = async () => {
-      while (true) {
+      while (inView) {
         await controls.start({
           x: Math.random() * window.innerWidth,
           y: Math.random() * window.innerHeight,
           transition: { duration: 2, ease: "linear" },
         });
-
+  
         await new Promise((resolve) => setTimeout(resolve, 1000));
       }
     };
-
+  
     if (inView) {
       moveOvni();
-    } else {
-      controls.stop();
     }
-
+  
     return () => {
       controls.stop();
     };
