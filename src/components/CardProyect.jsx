@@ -11,7 +11,7 @@ export const CardProyect = ({ title, description, img, urlSit, urlCod }) => {
       >
         <div className="overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none ">
           <img
-            className="hover:scale-110 transition-all duration-500 overflow-hidden w-[100%] h-[205px] bg-cover aspect-auto "
+            className="hover:scale-110 transition-all duration-500 overflow-hidden w-full max-w-[100%] bg-cover aspect-video object-cover "
             src={img}
             alt={`Imagen del sitio ${title}`}
             loading="lazy"
