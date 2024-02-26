@@ -31,7 +31,7 @@ export const About = () => {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 className="mx-auto bg-Blue border-Blue text-white rounded-md px-6 py-2 mt-4 shadow-lg hover:shadow-blue-500/50 transition-all duration-500 hover:bg-BlueHover "
-                href="https://drive.google.com/file/d/1bHf0zNEmgpYou1P18z_OP9rtRAZY_MHj/view?usp=sharing"
+                href="https://drive.google.com/file/d/1UEcqIIGODOUBhsoBq5jav2kCdNwWYBaR/view?usp=sharing"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Boton de descarga de Curriculum Vitae"
@@ -39,7 +39,7 @@ export const About = () => {
                 Descargar CV
               </motion.a>
             </div>
-          </div>
+          </div>  
           <div>
             <div className="my-10">
               <p className="text-xl mt-8 font-bold text-center">Skills</p>
