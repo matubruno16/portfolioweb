@@ -63,10 +63,11 @@ export const NavBar = () => {
           title="Logo Matias Bruno Desarrollador Web"
         >
           <img
-            className="lg:w-[270px] m-2"
+            className=""
             src={Logo}
             alt="Logo Matias Bruno"
-            width={200}
+            width={40}
+            loading="lazy"
           />
         </a>
         <IconMenuHamburger handleClick={handleClick} />
