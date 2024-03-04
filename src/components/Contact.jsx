@@ -60,9 +60,15 @@ export const Contact = () => {
             </a>
           </li>
         </ul>
-        <p className="text-white text-sm lg:text-base pt-14">
-        © {(new Date().getFullYear())} Todos los derechos reservados. Desarrollado por: <a href="https://matiasbrunodev.vercel.app/" target="_blank" rel="noreferrer">Matias Bruno</a>
-        </p>
+        <div className="flex flex-col md:flex-row text-center items-center pt-14 gap-2 text-base md:text-xl text-white">
+          <p>
+            © {(new Date().getFullYear())} Todos los derechos reservados.
+          </p>
+          <p>
+            Desarrollado por: <a href="https://matiasbrunodev.vercel.app/" target="_blank" rel="noreferrer">Matias Bruno</a>
+          </p>
+        </div>
+
       </div>
     </footer>
   );
