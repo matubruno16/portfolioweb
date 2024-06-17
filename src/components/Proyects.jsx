@@ -1,12 +1,12 @@
-import { CardProyect } from "./CardProyect";
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import homeBoutique from "../assets/Inicio-Boutique-de-Hebras.webp";
 import homeTodoList from "../assets/Inicio-TODOLIST.webp";
 import homeDolarHoy from "../assets/home-dolar-hoy.webp";
-import homeSocialMedia from "../assets/home-social-media.webp";
 import homeRelojJs from "../assets/home-reloj.webp";
 import homeTrekking from "../assets/home-trekking.webp";
+import homeMemoria from "../assets/home-memoriaStudio.webp";
+import { CardProyect } from "./CardProyect";
 
 export const Proyects = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,11 +44,10 @@ export const Proyects = () => {
           transition={{ delay: 0.15, duration: 2, stiffness: 100 }}
         >
           <CardProyect
-            urlSit="https://trekkingenargentina.vercel.app"
-            urlCod="https://github.com/matubruno16/trekking"
-            img={homeTrekking}
-            title="Trekking"
-            description="Blog de trekking en Argentina con React, Parallax y Tailwind CSS "
+            urlSit="https://memoriastudio.net"
+            img={homeMemoria}
+            title="Memoria Studio"
+            description="Sitio Web desarrollado en Next.js con Blog con CMS de Contentful"
           />
         </motion.article>
         <motion.article
@@ -57,11 +56,10 @@ export const Proyects = () => {
           transition={{ delay: 0.3, duration: 2, stiffness: 100 }}
         >
           <CardProyect
-            urlSit="https://boutiquedehebras.com.ar"
-            urlCod="https://boutiquedehebras.com.ar"
-            img={homeBoutique}
-            title="Boutique de Hebras"
-            description="Tienda E-commerce en Wordpress y Woocommerce"
+            urlSit="https://trekkingenargentina.vercel.app"
+            img={homeTrekking}
+            title="Trekking"
+            description="Blog de trekking en Argentina con React, Parallax y Tailwind CSS "
           />
         </motion.article>
 
@@ -71,11 +69,10 @@ export const Proyects = () => {
           transition={{ delay: 0.45, duration: 2, stiffness: 100 }}
         >
           <CardProyect
-            urlSit="https://dolarhoyargentina.vercel.app/"
-            urlCod="https://github.com/matubruno16/dolar-hoy"
-            img={homeDolarHoy}
-            title="Dólar Hoy"
-            description="Cotización de Dólar y otras divisas en vivo"
+            urlSit="https://boutiquedehebras.com.ar"
+            img={homeBoutique}
+            title="Boutique de Hebras"
+            description="Tienda E-commerce en Wordpress y Woocommerce"
           />
         </motion.article>
         <motion.article
@@ -84,11 +81,10 @@ export const Proyects = () => {
           transition={{ delay: 0.6, duration: 2, stiffness: 100 }}
         >
           <CardProyect
-            urlSit="https://social-media-dashboard-matias-bruno.netlify.app"
-            urlCod="https://github.com/matubruno16/social-media-dashboard"
-            img={homeSocialMedia}
-            title="Social Media Dashboard"
-            description="Dashboard en React y Tailwind CSS."
+            urlSit="https://dolarhoyargentina.vercel.app/"
+            img={homeDolarHoy}
+            title="Dólar Hoy"
+            description="Cotización de Dólar y otras divisas en vivo"
           />
         </motion.article>
 
@@ -99,7 +95,6 @@ export const Proyects = () => {
         >
           <CardProyect
             urlSit="https://relojenvivo.netlify.app"
-            urlCod="https://github.com/matubruno16/reloj-js"
             img={homeRelojJs}
             title="Reloj"
             description="Reloj desarrollado en Javascript con transiciones."
@@ -112,7 +107,6 @@ export const Proyects = () => {
         >
           <CardProyect
             urlSit="https://todo-list-react-mb.netlify.app"
-            urlCod="https://github.com/matubruno16/todolist"
             img={homeTodoList}
             title="ToDo List"
             description="Lista de tareas desarrollado con React JS and Tailwind CSS"

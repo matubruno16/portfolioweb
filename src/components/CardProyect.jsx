@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export const CardProyect = ({ title, description, img, urlSit, urlCod }) => {
+export const CardProyect = ({ title, description, img, urlSit }) => {
   return (
     <>
       <motion.div
@@ -26,26 +26,31 @@ export const CardProyect = ({ title, description, img, urlSit, urlCod }) => {
           </p>
         </div>
         <div className="flex items-center justify-around p-4">
-          <motion.a
+          <a
             title={`Boton sitio ${title}`}
-            whileHover={{ scale: 1.1 }}
             href={urlSit}
             rel="noopener noreferrer"
             target="_blank"
-            className="w-[85px] items-end bg-Blue hover:bg-BlueHover  border-Blue text-white rounded-md text-center py-2 shadow-lg hover:shadow-blue-500/50 transition-all duration-500"
+            className="button-send w-40 flex items-center justify-center px-4 py-2 rounded-lg text-lg capitalize bg-Blue  text-white"
           >
-            Sitio
-          </motion.a>
-          <motion.a
-            title={`Boton codigo ${title}`}
-            whileHover={{ scale: 1.1 }}
-            href={urlCod}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="w-[85px] items-end bg-Blue hover:bg-BlueHover  border-Blue text-white rounded-md text-center py-2  shadow-lg hover:shadow-blue-500/50 transition-all duration-500"
-          >
-            Codigo
-          </motion.a>
+            <div className="svg-wrapper-1">
+              <div className="svg-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    fill="currentColor"
+                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <span>Visitar</span>
+          </a>
         </div>
       </motion.div>
     </>
